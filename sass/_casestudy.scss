@@ -1,0 +1,171 @@
+.casestudy{
+
+    &__banner {
+    grid-row: 2 / 3;
+    grid-column: full-start / full-end;
+    }
+
+    &__content{
+        grid-row: 3 / 4;
+        grid-column: center-start / center-end;
+        margin-bottom: 6rem;
+    }
+
+    &__title {
+        margin-top: 6rem;
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: 500;
+    }
+
+    &__title-descript {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    &__info {
+        color: $color-grey;
+        font-size: 1.6rem;
+        margin-top: 6rem;
+        line-height: 151.3%;
+    }
+
+    &__subtitle {
+        margin-top: 6rem;
+        font-size: 2.4rem;
+    }
+
+    &__text {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.01em;
+        line-height: 132%;
+        font-weight: 300;
+        color: $color-black;
+
+    }
+    &__img {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 70%;
+        height: auto;
+
+        &-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.6rem;
+
+            &-ab {
+                display: grid;
+                margin: 0 1rem;
+                width: 30%;
+            }
+        }
+
+        &-full {
+            margin: 0 auto;
+            margin-top: 2rem;
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+
+    &__personas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__persona {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            width: 10rem;
+            height: auto;
+        }
+
+        &-text {
+            margin-left: 3rem;
+            font-weight: 300;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.teamthanks {
+    grid-row: 5 / 6;
+    grid-column: center-start / center-end;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: $color-grey-light-2;
+    z-index: 20;
+    margin: 5.5rem 0;
+
+    &__thanks {
+        font-size: 1.8rem;
+        letter-spacing: 0.01em;
+    }
+
+    &__members {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+        text-align: left;
+        margin-top: 4.6rem;
+    }
+
+    &__member-1 {
+        grid-column: 1 / 2;
+        justify-self: center;
+    }
+
+    &__member-2 {
+        grid-column: 2 / 3;
+        justify-self: center;
+    }
+
+    &__member-name {
+        color: $color-pink;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    &__member-position {
+        color: $color-black;
+        font-style: bold;
+        font-size: 1.8rem;
+        margin-bottom: .7rem;
+    }
+
+    &__member-tasks {
+        font-weight: 200;
+        font-size: 1.8rem;
+        line-height: 132%;
+    }
+}
+
+.teamthanks-blank {
+    grid-row: 5 / 6;
+    grid-column: full-start / full-end;
+    background-color: $color-grey-light-2;
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+

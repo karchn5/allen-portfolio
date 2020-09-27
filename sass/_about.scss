@@ -1,0 +1,54 @@
+.about {
+
+    &__content {
+        grid-row: 2 / 3;
+        grid-column: center-start / center-end;
+        display: flex;
+        margin: 11rem 0 11rem 0;
+    }
+
+    &__img {
+        width: 19.5rem;
+        height: 29.9rem;  
+
+    }
+
+    &__info {
+        margin-left: 8rem;
+    }
+
+    &__text {
+        line-height: 134%;
+        font-size: 1.6rem;
+        letter-spacing: 0.03em;
+    }
+
+    &__header {
+        font-size: 4rem;
+        font-weight: 300;
+        margin-bottom: 4rem;
+    }
+
+    &__skills {
+        grid-row: 4 / 5;
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__skill--header {
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__skill {
+        margin-left: 1.7rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        list-style-type: circle;
+        margin-bottom: .5rem;
+    }
+}

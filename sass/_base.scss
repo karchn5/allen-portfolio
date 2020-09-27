@@ -1,0 +1,66 @@
+// COLOR VARIABLES
+$color-white: white;
+$color-navy: #161623;
+$color-navy-dark: #0C0C19;
+$color-orange: #C86A4E;
+$color-black: black;
+$color-pink: rgba(215, 38, 123, 1);
+$color-grey-dark: #373737;
+$color-grey: rgba(79, 79, 79, 1);
+$color-grey-light-2: #dcdcdc;
+$color-grey-light: #7a7a7a;
+
+// $color-white: black;
+// $color-black: black;
+// $color-navy: #e5e5e5;
+// $color-navy-dark: #e5e5e5;
+
+// FONT VARIABLES
+$font-primary: 'Raleway', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    background-color: $color-white;
+    font-family: $font-primary;
+    color: $color-black;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem min-content min-content min-content min-content;
+    grid-template-columns: [full-start] minmax(25rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.475rem) [col-end]) [center-end] minmax(25rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: [full-start] minmax(15rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.475rem) [col-end]) [center-end] minmax(15rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.475rem) [col-end]) [center-end] minmax(10rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.475rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+    }
+}

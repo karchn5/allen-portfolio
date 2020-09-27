@@ -1,0 +1,144 @@
+.nav {
+    grid-row: 1 / 2;
+    grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    background-color: $color-white;
+    border-bottom: solid .5px rgb(177, 177, 177);
+
+    &__logo {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.7rem;
+        letter-spacing: 0.15em;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+    }    
+
+    &__link {
+        text-decoration: none;
+        margin-left: 5rem;
+        color: $color-black;
+        padding-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    &__link:hover {
+        color: $color-pink;
+        // border-bottom: solid 1px;
+        &:after {
+            content:"";
+            display: block;
+            margin: 0 auto;
+            width: 65%;
+            padding-top: .5rem;
+            border-bottom: 1px solid $color-pink;
+        }
+    }
+
+}
+
+.blank {
+    background-color: $color-white;
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+    border-bottom: solid .5px rgb(177, 177, 177);
+}
+
+.active {
+    color: $color-pink;;
+    // border-bottom: solid 1px;
+    &:after {
+        content:"";
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        padding-top: .5rem;
+        border-bottom: 1px solid $color-pink;
+    }
+}
+
+.footer {
+    grid-row: 6 / 7;
+    grid-column: center-start / center-end;
+
+    text-align: center;
+    margin: 8rem 8rem 6rem 6rem;
+
+    &__text {
+        margin-top: 8rem;
+        line-height: 172%;
+    }
+
+    &__button {
+        border: .3rem solid $color-black;
+        padding: 2rem;
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-weight: 400;
+
+        &:hover {
+            color: $color-white;
+            background-color: black;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+.dropbtn {
+    border: none;
+    background-color: $color-white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-style: $font-primary;
+
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $color-white;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: solid .25px $color-grey-light-2;
+    z-index: 1;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+  color: $color-pink;
+
+    }
+  

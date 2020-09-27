@@ -1,0 +1,39 @@
+.header {
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
+    padding: 10rem 0;
+
+    &__hello {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            color: $color-black;
+            font-size: 7rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            margin-bottom: 5rem;
+
+        }
+
+        &-line {
+            width: 100%;
+            height: 1px; 
+            background: $color-orange;
+        }
+    }
+
+    &__main {
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 350;
+            line-height: 145.5%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.pink {
+    color: $color-pink;
+}
