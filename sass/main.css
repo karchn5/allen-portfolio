@@ -124,6 +124,19 @@ a {
   border-bottom: 1px solid #d7267b;
 }
 
+.nav__link .active {
+  color: #d7267b;
+}
+
+.nav__link .active:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+  padding-top: .5rem;
+  border-bottom: 1px solid #d7267b;
+}
+
 .blank {
   background-color: white;
   -ms-grid-row: 1;

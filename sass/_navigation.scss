@@ -44,6 +44,19 @@
         }
     }
 
+    &__link .active {
+        color: $color-pink;
+        // border-bottom: solid 1px;
+        &:after {
+            content:"";
+            display: block;
+            margin: 0 auto;
+            width: 65%;
+            padding-top: .5rem;
+            border-bottom: 1px solid $color-pink;
+        }
+    }
+
 }
 
 .blank {
