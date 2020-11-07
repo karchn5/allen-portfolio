@@ -68,6 +68,32 @@ a {
   color: black;
 }
 
+.center-heading {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 26.4px;
+  color: #006491;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.domino-blue {
+  color: blue;
+}
+
+.margin-top-s {
+  margin-top: 4rem;
+}
+
+.projecttitle-domino {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
 .nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -235,6 +261,11 @@ a {
   color: #d7267b;
 }
 
+.nav__logo a {
+  text-decoration: none;
+  border: none;
+}
+
 .header {
   grid-column: center-start / center-end;
   -ms-grid-row: 2;
@@ -286,7 +317,8 @@ a {
 }
 
 .project {
-  width: 83.8rem;
+  width: 85rem;
+  height: 26.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +334,10 @@ a {
 }
 
 .project__img {
-  width: 60%;
+  width: 55%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project__text {
@@ -313,12 +348,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 3.5rem;
+  margin-left: 2.8rem;
 }
 
 .project__title {
-  font-size: 5rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 1.8rem;
 }
 
@@ -335,6 +370,7 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.9rem;
+  padding-right: 3rem;
 }
 
 .project__button {
@@ -378,7 +414,6 @@ a {
 
 .casestudy__title {
   margin-top: 6rem;
-  text-transform: uppercase;
   font-size: 5rem;
   font-weight: 500;
 }
@@ -408,6 +443,25 @@ a {
   line-height: 132%;
   font-weight: 300;
   color: black;
+}
+
+.casestudy__subtext {
+  margin-top: .5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 132%;
+  color: #7a7a7a;
+}
+
+.casestudy__video {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.casestudy__gif {
+  border: solid 1px #7a7a7a;
 }
 
 .casestudy__img {
@@ -564,6 +618,10 @@ a {
 .banner {
   width: 100%;
   height: auto;
+}
+
+iframe {
+  margin-top: 2rem;
 }
 
 .about__content {

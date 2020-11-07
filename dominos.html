@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="sass/main.css">
+        
+        <title>Allen Portfolio</title>
+    </head>
+    <body class="container">
+        <div class = "blank"></div>
+        <div class="nav">
+            <div class="nav__logo"><a href="index.html">Allen Chung</a></div>
+            <div class="nav__links">
+                <a class="nav__link" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="nav__link dropbtn active">Work <i class="fa fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="dominos.html">Domino's Redesign</a>
+                        <a href="bash.html">BASH</a>
+                        <a href="avda.html">AVDA</a>    
+                      </div>
+                </div>
+                <a class="nav__link" href="https://drive.google.com/file/d/1YRiBmMYWl6bFO9rMW9GLxgwxbm6aunEe/view?usp=sharing" target="blank">ResumÉ</a>
+                <a class="nav__link" href="about.html">About</a>
+            </div>
+        </div>
+        <div class="casestudy__banner">
+            <img class="banner" src="img/domino/dominos-banner.png" alt="bashbanner">   
+        </div>
+        <div class="casestudy__content">
+            <h1 class="casestudy__title">Domino’s Redesign</h1>
+            <h3 class="casestudy__title-descript">An unsolicited redesign of Domino’s online ordering process.</h3>
+            <p class="casestudy__info"><b>Timeline:</b> 20 hours<br>
+                <b>Scope:</b> Project management, UX research, Prototyping</p>
+
+            <h2 class="casestudy__subtitle">Background</h2>
+            <p class="casestudy__text">
+                A couple months ago, I ordered a pizza from Domino’s to satisfy my unhealthy cravings. Now I love Domino’s, but going through their website was frustrating and maybe even made me lose my appetite a little (sad). More specifically, I found myself frustrated when using their Pizza Builder feature. For those of you who don’t know, this is Domino’s’ interactive “Build Your Own Pizza” tool. Pretty much one of their most important features as a business whose sole purpose is to make and deliver pizza. 
+            </p>
+
+            <img src="img/domino/dominos-pizza builder.png" alt="paper prototype" class="casestudy__img">
+
+            <p class="casestudy__text">
+                After a few weeks and one more pizza order, I finally decided to take a shot at redesigning my favorite pizza company’s website. I felt that a lot of the User Experience could be executed better and improve through a more intuitive User Interface. The current UI is not exactly archaic, but could use an aesthetic update.<br><br>
+
+                Please keep in mind that this redesign was unsolicited and just a personal project of mine. My design decisions were solely based on my experience as a returning customer and student designer. It’s impossible to fully understand the motivation behind their current design unless you work with them, and I’m sure they had their justifications for their design, whether it be technical or resource constraints, or monetization. With that in mind, I tried my best to redesign their order process while sticking to the look and feel of their visual brand.
+            </p>
+
+            <h2 class="casestudy__subtitle">Current Design Analysis</h2>
+            <p class="casestudy__text">​Before I began making any prototypes of my redesign, I first wanted to evaluate Domino’s current design. Here are the major pain points I identified along the way (concrete examples and images are shown later):
+            </p>
+            <p class="casestudy__text indent">
+                1. <strong>Information Overload</strong> - Clustered text may make users overwhelmed and unsure of what to do. This can cause users to spend too much time on a certain page, leading to frustration.
+            </p>
+            <p class="casestudy__subtext indent">
+                Example: There are a total of 26 toppings in the Toppings section of the Pizza Builder. As a result, the font size of these text elements are extremely small and hard to read.
+            </p>
+            <p class="casestudy__text indent">
+                2. <strong>Redundant Features and Text</strong> - There are recurring instances of the same features/text.
+            </p>
+            <p class="casestudy__subtext indent">
+                Example: My Order and the Cart features serve the same function.
+            </p>
+            <p class="casestudy__text indent">
+                3. <strong>Accessibility Issues</strong> - Poor accessibility practice = Poor user experience
+            </p>
+            <p class="casestudy__subtext indent">
+                Example: Low contrast text, and too many pop-up dialogs that interrupt and frustrate users, possibly leading them to cancel their order and/or lose interest. 
+            </p>            
+
+            <h2 class="casestudy__subtitle">Paper Prototyping</h2>
+            <p class="casestudy__text">I took a moment to sketch some quick designs before committing to higher fidelity designs.</p>
+            ​<img src="img/domino/dominos-paper.gif" alt="paper prototype" class="casestudy__img casestudy__gif">
+            <p class="casestudy__subtext center-text">Paper Prototype</p>
+
+            <h2 class="casestudy__subtitle">Redesign & UX Proposals</h2>
+            <p class="casestudy__text">My redesign is broken up into 5 sections: Header, Menu Pages, Pizza Builder Page, and Checkout Pages.</p>
+
+            <h3 class="center-heading margin-top-s">#1 - Header</h3>
+            ​<img src="img/domino/dominos-header changes.png" alt="header changes" class="casestudy__img-full">
+
+            <h3 class="center-heading">#2 - Menu Pages</h3>
+            ​<img src="img/domino/dominos-menu changes.png" alt="menu changes" class="casestudy__img-full">
+
+            <h3 class="center-heading">#3 - Pizza Builder Page</h3>
+            ​<img src="img/domino/dominos-pizza builder changes.png" alt="pizza builder changes" class="casestudy__img-full">
+            
+            ​<p class="casestudy__text"><strong>*</strong> The video below demonstrates why (1) the menu items should be in grouped boxes, and (2) the Pizza Builder tool should have its own dedicated page instead of being a pop-up dialog.
+            </p>
+
+            <p class="casestudy__text">(1) Text-to-speech (TTS) applications are not perfect. With proper usage of headings and grouped elements, TTS applications can read pages more accurately and orderly.
+            </p>
+                
+            <p class="casestudy__text">(2) The Pizza Builder is opened using a pop-up window. <a class= "domino-blue" href="https://usability.yale.edu/web-accessibility/articles/focus-keyboard-operability" target="_blank">Keyboard Focus</a> and TTS applications sometimes won’t recognize when this happens, so it continues to scan the initial page, not the pop-up. A visually impaired user will be unaware of how to build their pizza, unless they wait for their TTS application to read through the entire first page, including the footer. The user may abandon their order out of frustration.</p>
+
+            <video class="casestudy__video" controls>
+                <source src="img/domino/pizzabuilder-video1.mp4" type="video/mp4">
+            </video>
+
+            <h3 class="center-heading">#4 - Checkout Pages</h3>
+            ​<img src="img/domino/dominos-checkout changes.png" alt="checkout changes" class="casestudy__img-full">
+            
+                
+            <h2 class="casestudy__subtitle">Reflection</h2>
+            <p class="casestudy__text">​In hindsight, I realize I should have done a redesign of the mobile app, this project was a great opportunity to improve my technical and visual design skills and learn more about usability standards. I had a lot of fun doing my first redesign, so I just might make a mobile version for it. <br><br>
+            Here’s the link to my <a class= "domino-blue" href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEhGZRm82B5wCQGbOVBKiJD%2FDomino-s-Redesign%3Fnode-id%3D39%253A177%26scaling%3Dmin" target="_blank">interactive prototype</a>. Feel free to play around with it! :)</p>
+
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEhGZRm82B5wCQGbOVBKiJD%2FDomino-s-Redesign%3Fnode-id%3D39%253A177%26scaling%3Dmin" allowfullscreen></iframe>
+
+            
+        </div>
+
+        <div class="footer">
+            <a href="" class="footer__button"> Back to My Work</a>
+            <p class="footer__text">allen.jhc98@gmail.com
+               <br> 909.660.1091</p>
+               <i class="fa fa-linkedin-square footer__icon"></i>
+        </div>
+
+    </body>
+</html>

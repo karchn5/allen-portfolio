@@ -5,3 +5,29 @@
 a {
     color: $color-black;
 }
+
+.center-heading {
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 26.4px;
+    color: $color-domino;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.domino-blue {
+    color: $color-blue;
+}
+
+.margin-top-s {
+    margin-top: 4rem;
+}
+
+.projecttitle-domino {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
