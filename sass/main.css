@@ -360,6 +360,7 @@ ol {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 2.8rem;
+  font-weight: 300;
 }
 
 .project__title {
@@ -378,9 +379,9 @@ ol {
 }
 
 .project__descript {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
   padding-right: 3rem;
 }
 
