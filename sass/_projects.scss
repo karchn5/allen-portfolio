@@ -5,72 +5,138 @@
 }
 
 .project {
-    width: 85rem;
-    height: 26.5rem;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 8rem;
-    border-radius: 1.6rem;
+    margin-bottom: 14rem;
     background-color: white;
-    overflow: hidden;
-    box-shadow: 4px 6px 25px rgba(0, 0, 0, 0.25);
+    // box-shadow: 4px 6px 25px rgba(0, 0, 0, 0.25);
+
+
+    &__content {
+        width: 90%;
+        height: 37rem;
+        display: flex;
+        align-items: center;
+        border: solid 1px $color-grey-light-2;
+        margin-left: 10%;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            margin-left: 0;
+        }
+    }
 
     &__img {
         width: 55%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
+        position: relative;
+        transform: translateX(-20%);
+        border: solid 1px $color-grey-light-2;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 80%;
+            height: auto;
+            transform: translateX(0);
+            transform: translateY(-20%);
+        }
     }
 
     &__text {
+        transform: translateX(-12.5%);
         display: flex;
         flex-direction: column;
-        margin-left: 2.8rem;
         font-weight: 300;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-medium) {
+            transform: translateX(0);
+            text-align: center;
+            transform: translateY(-17.5%);
+            width: 80%;
+        }
+        
         
     }
 
     &__title {
-        font-size: 4rem;
+        letter-spacing: .5px;
+        font-size: 3rem;
         font-weight: 700;
         margin-bottom: 1.8rem;
     }
 
     &__tags {
+        letter-spacing: .5px;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
         font-weight: 350;
         font-size: 1.2rem;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.4rem;
         color: $color-grey-light;
+
     }
 
     &__descript {
+        letter-spacing: .2px;
         font-weight: 300;
         font-size: 1.6rem;
         line-height: 2rem;
         padding-right: 3rem;
 
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+            padding-right: 0;
+        }
+
     }
 
     &__button {
         display: flex;
-        font-weight: 400;
-        color: white;
+        font-weight: 700;
+        color: $color-grey-dark;
         cursor: pointer;
         margin-top: 2.5rem;
-        width: 18rem;
-        height: 5rem;
-        font-size: 1.6rem;
-        border-radius: 3rem;
+        width: 100%;
+        padding: 1rem 0;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        border-radius: 6px;
         text-decoration: none;
-        background-color: $color-grey-dark;
+        background-color: $color-domino;
         border: 0;
         font-family: $font-primary;
         justify-content: center;
         align-items: center;
-
+        text-transform: uppercase;
 
     }
 
+    &__button-piazza {
+        color: $color-white;
+        background-color: $color-piazza;
+    }
 
+    
+    &__button-bash {
+        color: $color-white;
+        background-color: $color-bash;
+    }
+
+    
+    &__button-avda {
+        color: $color-white;
+        background-color: $color-avda;
+    }
+
+
+}
+
+.iconify {
+    font-size: 1.55rem;
+    margin-left: 1rem;
+    position: absolute;
+    right: 1rem;
 }
