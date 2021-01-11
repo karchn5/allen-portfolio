@@ -141,6 +141,12 @@ ol {
   letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 50em) {
+  .nav__link {
+    margin-left: 2rem;
+  }
+}
+
 .nav__link:hover {
   color: #e82649;
 }
@@ -286,7 +292,7 @@ ol {
   grid-row: 6 / 7;
   grid-column: center-start / center-end;
   text-align: center;
-  margin: 8rem 8rem 6rem 6rem;
+  margin: 10rem 0 5rem 0;
 }
 
 .footer__text {

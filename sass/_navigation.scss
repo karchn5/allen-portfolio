@@ -31,6 +31,10 @@
         padding-bottom: 2rem;
         font-weight: 500;
         letter-spacing: 1px;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-left: 2rem;
+        }
     }
 
     &__link:hover {
