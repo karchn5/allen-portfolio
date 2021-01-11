@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="sass/main.css">
+        
+        <title>Allen Portfolio</title>
+    </head>
+    <body class="container">
+        <div class = "blank"></div>
+        <div class="nav">
+            <div class="nav__logo"><a href="index.html">Allen Chung</a></div>
+            <div class="nav__links">
+                <a class="nav__link" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="nav__link dropbtn active">Work <i class="fa fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="dominos.html">Domino's Redesign</a>
+                        <a href="bash.html">BASH</a>
+                        <a href="avda.html">AVDA</a>    
+                      </div>
+                </div>
+                <a class="nav__link" href="files/RESUME 1-1-21.pdf" target="blank">ResumÉ</a>
+                <a class="nav__link" href="about.html">About</a>
+            </div>
+        </div>
+        <div class="casestudy__banner">
+            <img class="banner" src="img/piazza/Banner.png" alt="bashbanner">   
+        </div>
+        <div class="casestudy__content">
+            <h1 class="casestudy__title">Piazza Redesign</h1>
+            <h3 class="casestudy__title-descript">Redesigning Piazza’s mobile app for easier navigation and intuitiveness.</h3>
+            <p class="casestudy__info">
+                <b>Role:</b> Team Lead, Designer<br>
+                <b>Timeline:</b> 2 weeks<br>
+                <b>Scope:</b> Project management, UX research, UI/UX Design</p>
+
+            <h2 class="casestudy__subtitle">Background</h2>
+            <p class="casestudy__text">
+                Piazza is an online Q&A platform, widely used among colleges/universities, where students and instructors can discuss course-related work in an efficient manner. It’s a great way for students to get help from fellow students, TAs, and professors, and for finding course-related resources, announcements, and all the other good stuff. Basically, students love what Piazza can do, including me. But you might overhear students on campus venting their frustrations about certain elements of Piazza. A love-hate relationship!
+            </p>
+            <p class="casestudy__text">In a Usability & IA (Information Architecture) course at UC San Diego, I worked with 4 other students to redesign Piazza’s mobile application. <b>Our goal was to create a more intuitive user interface and facilitate a smoother experience for student users.</b> </p>
+
+            <h2 class="casestudy__subtitle">User Testing: Round One</h2>
+
+            <p class="casestudy__text margin-less">
+                To figure out what issues students were having, we conducted 4 user testing sessions. We recruited college students to be our users as they’re very familiar with Piazza and would help us identify the breakdowns.
+                <br><br>
+                <i>Note: Since we only tested undergraduate students, and as students ourselves, the issues we identified may be catered towards this specific demographic’s needs/wants.</i> 
+                <br><br>
+                We asked our participants to roleplay using Piazza while completing a set of tasks consisting of commonly used features (e.g., “Comment on a post while remaining anonymous”). 
+                <br><br>
+                These are some of the breakdowns we noticed while testing:<br>
+            </p>
+            <ol class="casestudy__text">
+                <li>Difficulty finding features because icons were unintuitive or unlabeled</li>
+                <li>Certain words seemed to mean the same thing (“Favorite” vs. “Follow”)</li>
+                <li>Some text falsely appear as links</li>
+                <li>Difficulty finding saved drafts and favorited/followed posts</li>
+                <li>Unable to delete posts or drafts</li>
+            </ol>
+
+            <p class="casestudy__text">
+                ALL of our testers actually found it difficult to find certain features because their respective <b>icons were either unconventional or unrecognizable</b> (in the context of “Recognition rather than recall” in <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen’s 10 Usability Heuristics</a>).
+                <br><br>
+                Because of how prevalent this issue was compared to others, we ultimately decided to redesign this component (icon usage and placement) for our project. Our goal was to improve Piazza’s iconography to be more intuitive and recognizable so students can have a more seamless, stress-free experience on an app they use almost every day.
+                <br><br>
+                Our testers instintively began to tap the ellipsis icon when they couldn’t find a feature because they figured it might be there. Occasionally, this actually worked! This was interesting and kind of funny, but we don’t want our users to constantly be guessing on where things are.
+                <br>
+                <br>
+            </p>
+            <img src="img/piazza/User testing round 1.png" alt="user testing round 1" class="casestudy__img-full">
+
+            <h2 class="casestudy__subtitle">Competitive Analysis</h2>
+            <p class="casestudy__text">From here we asked, “How do we even create more intuitive and recognizable icons in the first place?”</p>
+            <p class="casestudy__text">
+            To answer this question we looked at 3 different applications (Instagram, Canvas, and Slack) and identified the strengths and weaknesses of their icon usage and placement. We chose these applications because they all offered potential (and unique) solutions for how we can use icons in Piazza.
+            </p>
+            <p class="casestudy__text margin-less">Some questions we kept in mind while analyzing these apps:</p>
+            <ol class="casestudy__text">
+                <li>What icons do they use?</li>
+                <li>Where are the icons placed?</li>
+                <li>Do the icons make it easier for users to navigate?</li>
+                <li>Can we apply it to Piazza? How?</li>
+            </ol>
+
+
+            <img src="img/piazza/instagram-1.png" alt="instagram competitive audit" class="casestudy__img-full">
+            <img src="img/piazza/canvas-1.png" alt="canvas competitive audit" class="casestudy__img-full">
+            <img src="img/piazza/slack-1.png" alt="slack competitive audit" class="casestudy__img-full">       
+
+            <h2 class="casestudy__subtitle">Sketches</h2>
+            <p class="casestudy__text">Using the insight we gained from our competitive analyses, we made 5 sketches of how we can redesign Piazza’s icons. Each sketch integrated different types of solutions from our competitors.</p>
+            <img src="img/piazza/sketches.png" alt="sketches" class="casestudy__img-full"> 
+
+            <h2 class="casestudy__subtitle">High-Fidelity Prototypes</h2>
+            <p class="casestudy__text">We created two high-fidelity prototypes, each incorporating DIFFERENT solutions that we brainstormed in our sketches. For example, the prototypes use different icon designs, placement, filtering methods, etc. We did this so that we could easily compare the different solutions when testing them on users in the next user testing round.</p>
+            <img src="img/piazza/high fidelity-1.png" alt="prototype 1" class="casestudy__img-full">
+            <img src="img/piazza/high fidelity-2.png" alt="prototype 2" class="casestudy__img-full">
+
+
+
+            <h2 class="casestudy__subtitle">User Testing: Round Two</h2>
+            <p class="casestudy__text margin-less">​Finally, we got to test our two prototypes on 4 student participants who are familiar with Piazza.
+            <br><br>
+            We had two goals when conducting these user tests:
+            </p>
+            <ol class="casestudy__text">
+                <li>Find out if our prototypes solve the issues in the first place. (i.e., Do users intuitively know what an icon will do? Do the bottom nav bar and new placement of icons speed up interactions?</li>
+                <li>Find out which of the two prototypes solved the issues better. (ie., Which prototype is easier for our users? Because we only tested 4 participants, we decided to answer this question with qualitative data by asking our participants directly which prototype they like).</li>
+            </ol>
+            <img src="img/piazza/User testing round 2-1.png" alt="prototype 1 user testing" class="casestudy__img-full">
+            <img src="img/piazza/User testing round 2-2.png" alt="prototype 2 user testing" class="casestudy__img-full">
+            <p class="casestudy__text">After this second round of testing, we found that 3 out of the 4 users preferred Prototype 2. These 3 users appreciated the consistent bottom nav bar, the recognizability of the new icons, the filter’s visibility of status, and the easy-to-understand floating action buttons. The user who preferred Prototype 1 liked how they felt confident pressing buttons because they were always laid out, although he conceded that Prototype 2 made navigation simpler.
+            <br><br>
+            Most of our users preferred consistency within an application, meaning the bottom nav bar elements should remain the same as conventionally practiced. Also, users generally have a less stressful experience when an app has easily recognizable elements, like intuitive icons that represent its function or labeled icons so that users don’t have to guess what the button does.</p>
+
+            <h2 class="casestudy__subtitle">Reflections</h2>
+            <p class="casestudy__text">Even though this was only a 2-week project, it was a valuable experience for me as a designer. I learned a great deal, but mostly, I learned just how useful competitive analyses can be! This was my first time doing one and I’m slightly upset I haven’t done it before.
+            <br><br>
+            This project has also helped me improve my technical skills in Figma. I’m learning to make my prototypes more interactive and the process is getting easier as I learn how to design faster, better, and just more efficiently.
+            <br><br>
+            Thank you for reading!
+            <br><br>   
+            <a href="https://www.figma.com/file/yMo6Twapi9L5px7mywAYBU/Piazza-Redesign?node-id=245%3A151">You can check out our interactive prototype here!</a></p>
+            <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyMo6Twapi9L5px7mywAYBU%2FPiazza-Redesign%3Fnode-id%3D13%253A42%26scaling%3Dscale-down" allowfullscreen></iframe> -->
+
+            
+        </div>
+
+        <div class="footer">
+            <a href="" class="footer__button"> Back to My Work</a>
+            <p class="footer__text">allen.jhc98@gmail.com
+               <br> 909.660.1091</p>
+               <i class="fa fa-linkedin-square footer__icon"></i>
+        </div>
+
+    </body>
+</html>
